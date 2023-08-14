@@ -60,42 +60,42 @@
         <div class="col-4">
           <a href="https://www.instagram.com/raveliza/" target="_blank" class="instagram-link"></a>
           <div class="circle-icon">
-            <img src="img/DRUM.jpg" alt="Web Development" class="small-image" class="round-image" />
+            <img src="img/DRUM.jpg" alt="Drums" class="small-image round-image" />
           </div>
           <h4>DRUMS</h4>
         </div>
         <div class="col-4">
           <a href="https://www.instagram.com/ramadhansatria/" target="_blank" class="instagram-link"></a>
           <div class="circle-icon">
-            <img src="img/BASS.jpg" alt="Web Development" class="small-image" class="round-image" />
+            <img src="img/BASS.jpg" alt="Bass" class="small-image round-image" />
           </div>
           <h4>BASS</h4>
         </div>
         <div class="col-4">
           <a href="https://www.instagram.com/cynantiapratita/" target="_blank" class="instagram-link"></a>
           <div class="circle-icon">
-            <img src="img/VOCAL.jpg" alt="Web Development" class="small-image" class="round-image" />
+            <img src="img/VOCAL.jpg" alt="Vocals" class="small-image round-image" />
           </div>
           <h4>VOCALS</h4>
         </div>
         <div class="col-4">
           <a href="https://www.instagram.com/usaysunny/" target="_blank" class="instagram-link"></a>
           <div class="circle-icon">
-            <img src="img/GUITAR.jpg" alt="Web Development" class="small-image" class="round-image" />
+            <img src="img/GUITAR.jpg" alt="Guitar" class="small-image round-image" />
           </div>
           <h4>GUITAR</h4>
         </div>
         <div class="col-4">
-          <a href="https://www.instagram.com/ramamayristha/" target="_blank\" class="instagram-link"></a>
+          <a href="https://www.instagram.com/ramamayristha/" target="_blank" class="instagram-link"></a>
           <div class="circle-icon">
-            <img src="img/GUITAR2.jpg" alt="Web Development" class="small-image" class="round-image" />
+            <img src="img/GUITAR2.jpg" alt="Guitar" class="small-image round-image" />
           </div>
           <h4>GUITAR</h4>
         </div>
         <div class="col-4">
           <a href="https://www.instagram.com/reinerramandap/" target="_blank" class="instagram-link"></a>
           <div class="circle-icon">
-            <img src="img/KEYBOARD.jpg" alt="Web Development" class="small-image" class="round-image" />
+            <img src="img/KEYBOARD.jpg" alt="Keyboard" class="small-image round-image" />
           </div>
           <h4>KEYBOARD</h4>
         </div>
@@ -104,35 +104,55 @@
   </section>
 
   <style>
+    /* Responsive styles for service section */
     .box {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+      /* Adjust the gap as needed */
     }
 
     .col-4 {
-      width: 160px;
-      /* Adjust the width as needed */
+      flex-basis: calc(33.33% - 20px);
+      /* 3 columns in a row with gap between */
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-left: 20px;
-      /* Margin between columns */
     }
 
     .circle-icon {
       width: 100px;
-      /* Adjust the width as needed */
       height: 100px;
       border-radius: 50%;
       overflow: hidden;
       margin-bottom: 10px;
-      /* Margin between icon and text */
     }
 
     .small-image {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+
+      /* Adjust styles for screens up to 768px wide */
+      .col-4 {
+        flex-basis: calc(50% - 20px);
+        /* 2 columns in a row with gap between */
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      /* Adjust styles for screens up to 480px wide */
+      .col-4 {
+        flex-basis: 100%;
+        /* 1 column in a row */
+        text-align: center;
+        /* Center align text */
+      }
     }
   </style>
 
