@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>STEREOWALL</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="DooWeak"></script>
+</head>
+
+<body>
+  <!-- loader -->
+  <div class="bg-loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- header -->
+  <header>
+    <div class="container">
+      <h1><a href="index.html">STEREOWALL</a></h1>
+      <ul>
+        <li class="active"><a href="track.html">TRACK</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="photo.html">PHOTO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="live.html">LIVE</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- label -->
+  <section class="label">
+    <div class="container"></div>
+  </section>
+
+  <!-- service -->
+  <section class="service">
+    <div class="container">
+      <h3>TRACK</h3>
+      <div class="image-grid">
+        <a href="blood.html"><img src="img/blood.png" alt="Image 1"></a>
+        <a href="call.html"><img src="img/call.png" alt="Image 2"></a>
+        <a href="cut.html"><img src="img/cut.png" alt="Image 3"></a>
+        <a href="forever.html"><img src="img/forever.png" alt="Image 4"></a>
+        <a href="heaven.html"><img src="img/heaven.png" alt="Image 5"></a>
+        <a href="hom.html"><img src="img/home.png" alt="Image 6"></a>
+        <a href="jkt.html"><img src="img/jakarta.png" alt="Image 7"></a>
+        <a href="vale.html"><img src="img/vale.png" alt="Image 8"></a>
+        <a href="who.html"><img src="img/who.png" alt="Image 9"></a>
+        <a href="tentang.html"><img src="img/tentang.png" alt="Image 10"></a>
+        <a href="strangers.html"><img src="img/strangers.png" alt="Image 11"></a>
+        <a href="mengerti.html"><img src="img/mengerti.png" alt="Image 12"></a>
+  </section>
+  <style>
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .image-grid img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <small>Copyright &copy; 2023 - DooWeak. All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".bg-loader").hide();
+    });
+  </script>
+</body>
+
+</html>
